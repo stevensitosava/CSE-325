@@ -1,0 +1,26 @@
+
+@inherits LayoutComponentBase
+
+<div class="main-layout">
+    <header class="navbar">
+        <a href="/" class="navbar-brand">Blazing Pizza</a>
+
+        <nav>
+            <NavLink href="/" Match="NavLinkMatch.All">
+                Home
+            </NavLink>
+
+            <NavLink href="/specials">
+                Specials
+            </NavLink>
+        </nav>
+    </header>
+
+    <div class="content">
+    @Body
+    </div>
+
+    <footer class="site-footer">
+        <p>© 2026 Steven Savarin · Spain</p>
+    </footer>
+</div>
